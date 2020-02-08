@@ -7,7 +7,6 @@
 
 #### understanding the data
 
-`select * from recent_grads limit 10`
 Header | Description
 ---|---------
 `Rank` | Rank by median earnings
@@ -31,7 +30,6 @@ Header | Description
 `College_jobs` | Number with job requiring a college degree
 `Non_college_jobs` | Number with job not requiring a college degree
 `Low_wage_jobs` | Number in low-wage service jobs
-
 
 #### SQL query that returns the majors where females were a minority
 
