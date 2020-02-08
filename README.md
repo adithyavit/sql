@@ -38,25 +38,18 @@ Header | Description
 `select Major, ShareWomen from recent_grads
  where ShareWomen < 0.5`
 
-#### SQL query that returns:
-##### All majors with majority female and
-##### All majors had a median salary greater than 50000.
+#### SQL query that returns: All majors with majority female and all majors had a median salary greater than 50000.
 
 `select Major, Major_category, Median, ShareWomen from recent_grads
 where ShareWomen >0.5 and Median > 50000`
 
 
-#### SQL query that returns the first 20 majors that either:
-##### Have a Median salary greater than or equal to 10,000, or
-##### Have less than or equal to 1,000 Unemployed people
+#### SQL query that returns the first 20 majors that either: Have a Median salary greater than or equal to 10,000, or have less than or equal to 1,000 Unemployed people
 `select Major, Median, Unemployed from recent_grads
 where Median>=10000 or Unemployed <= 1000
 limit 20`
 
-#### uery we explored above, which returns all majors that:
-##### Fell under the category of Engineering and either
-##### Had mostly women graduates
-##### Or had an unemployment rate below 5.1%, which was the rate in August 2015
+#### uery we explored above, which returns all majors that:Fell under the category of Engineering and either had mostly women graduates Or had an unemployment rate below 5.1%, which was the rate in August 2015
 
 `SELECT Major, Major_category, ShareWomen, Unemployment_rate
 from recent_grads
